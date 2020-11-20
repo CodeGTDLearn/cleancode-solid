@@ -1,6 +1,6 @@
 package princ_2_ocp.solution;
 
-public class CheckingAccount extends AbstractWithdraw{
+public class WithdrawChecking extends AbstractWithdraw{
 
     @Override
     public void WithDraw(Integer transaction)

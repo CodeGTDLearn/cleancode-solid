@@ -1,13 +1,13 @@
 package princ_2_ocp.problem;
 
-public class DebitSystem {
+public class WithdrawSystem {
 
     int transactNumber = 0;
 
-    public void WithDraw(double amount, String acctNumber, TypeAccount typeAccount)
+    public void WithDraw(double amount, String acctNumber, WithdrawTypeAccounts withdrawTypeAccounts)
     {
 
-        switch (typeAccount) {
+        switch (withdrawTypeAccounts) {
             
             case CHECKING:
 
@@ -19,6 +19,12 @@ public class DebitSystem {
                 
                 this.transactNumber = 1;
                 System.out.println("WithDraw from Savings " + this.transactNumber);
+                break;
+
+            case INVEST:
+
+                this.transactNumber = 1;
+                System.out.println("WithDraw from Invest " + this.transactNumber);
                 break;
 
         }
