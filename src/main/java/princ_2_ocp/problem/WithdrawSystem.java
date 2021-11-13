@@ -1,34 +1,27 @@
 package princ_2_ocp.problem;
 
+import static princ_2_ocp.problem.Accounts.*;
+
 public class WithdrawSystem {
 
-    int transactNumber = 0;
 
-    public void WithDraw(double amount, String acctNumber, WithdrawTypeAccounts withdrawTypeAccounts)
-    {
+  public void WithDraw(String acctNumber,Accounts accounts) {
 
-        switch (withdrawTypeAccounts) {
-            
-            case CHECKING:
+    switch (accounts) {
+      case CHECKING:
+        System.out.println("WithDrawing | TypeAccount:" + CHECKING + " | n: " + acctNumber);
+        break;
 
-                this.transactNumber = 1;
-                System.out.println("WithDraw from Checking " + this.transactNumber);
-                break;
+      case SAVINGS:
+        System.out.println("WithDrawing | TypeAccount:" + SAVINGS + " | n: " + acctNumber);
+        break;
 
-            case SAVINGS:
-                
-                this.transactNumber = 1;
-                System.out.println("WithDraw from Savings " + this.transactNumber);
-                break;
-
-            case INVEST:
-
-                this.transactNumber = 1;
-                System.out.println("WithDraw from Invest " + this.transactNumber);
-                break;
-
-        }
+      case INVEST:
+        System.out.println("WithDrawing | TypeAccount:" + INVEST + " | n: " + acctNumber);
+        break;
 
     }
+
+  }
 
 }

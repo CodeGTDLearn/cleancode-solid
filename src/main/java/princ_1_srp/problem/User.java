@@ -4,50 +4,54 @@ import java.util.List;
 
 public class User {
 
-    private String name;
-    private String email;
+  private String name;
+  private String email;
 
-    public void AddUser(User user) {
-        
-    }
-    
-    public List<User> ListAllUsers(){
-        return null;
-    }
 
-    
-    public void MailMessage() {
-        
-    }
-    
-    public void Repository() {
-        
-    }
-    
-    public void EmailToInformNewPassword() {
+  public void AddUser(User user) {
 
-        MailMessage();
-        
-    }
-    
-    public String getName()
-    {
-        return name;
-    }
+  }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
 
-    public String getEmail()
-    {
-        return email;
-    }
+  public List<User> ListAllUsers() {
+    return null;
+  }
 
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
-    
+
+  public void MailMessage() {
+
+  }
+
+
+  public void Repository() {
+
+  }
+
+
+  public void EmailToInformNewPassword() {
+
+    MailMessage();
+
+  }
+
+
+  public String getName() {
+    return name;
+  }
+
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+
+  public String getEmail() {
+    return email;
+  }
+
+
+  public void setEmail(String email) {
+    this.email = email;
+  }
+
 }
